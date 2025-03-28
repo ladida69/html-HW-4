@@ -143,25 +143,26 @@ h2 {
   content: '';
   display: block;
   height: 120px;
-  outline: 1px solid #000;
-  /* background-image: url("../images/portfolio/poster.jpg"); */
-  background-size: contain;
+  margin-bottom: 30px;
+  background-size: 70px ;
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--secondary-bg-color);
 }
+
 .list-item:nth-child(1)::before {
-  background-image: url('../images/portfolio/poster.jpg');
+  background-image: url('../images/antenna\ 1.svg');
 }
 .list-item:nth-child(2)::before {
-  background-image: url();
+  background-image: url(../images/clock\ 1.svg);
 }
 .list-item:nth-child(3)::before {
-  background-image: url();
+  background-image: url('../images/diagram\ 1.svg');
 }
 .list-item:nth-child(4)::before {
-  background-image: url();
+  background-image: url('../images/astronaut\ 1.svg');
 }
+
 .team {
   font-weight: 500;
   font-size: 16px;
