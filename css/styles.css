@@ -10,7 +10,7 @@
   --primary-white-color: #ffffff;
   --accent-hover-color: #027df7;
   --main-text-color: #eeeeee;
-  --icon-color-fill: #AFB1B8;
+  --icon-color-fill: #afb1b8;
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -176,24 +176,31 @@ h2 {
 
 .socials {
   display: flex;
-  gap: 10px;
+  padding: 0;
+  margin: 0;
+  gap: 22px;
 }
 .svg-icon {
   display: flex;
   width: 20px;
   height: 20px;
-  margin-top: 16px;
   fill: var(--icon-color-fill);
 }
 .svg-icon:hover {
   fill: var(--accent-hover-color);
-  
+}
+
+.button-icon:hover {
+  color: var(--accent-hover-color);
 }
 .button-icon {
   display: block;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  width: 20px;
+  height: 20px;
+  gap: 22px;
 }
 .intro {
   font-weight: 700;
@@ -374,8 +381,8 @@ p {
   background-color: var(--secondary-bg-color);
 }
 
-.contacts-list:hover{
-color: var(--accent-hover-color);
+.contacts-list:hover {
+  color: var(--accent-hover-color);
 }
 .contacts-list {
   display: flex;
