@@ -10,6 +10,7 @@
   --primary-white-color: #ffffff;
   --accent-hover-color: #027df7;
   --main-text-color: #eeeeee;
+  --icon-color-fill: #AFB1B8;
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -172,6 +173,28 @@ h2 {
   list-style: none;
   padding-top: 94px;
 }
+
+.socials {
+  display: flex;
+  gap: 10px;
+}
+.svg-icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin-top: 16px;
+  fill: var(--icon-color-fill);
+}
+.svg-icon:hover {
+  fill: var(--accent-hover-color);
+  
+}
+.button-icon {
+  display: block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
 .intro {
   font-weight: 700;
   font-size: 36px;
@@ -205,6 +228,7 @@ h2 {
   margin-top: 94px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 94px;
 }
 
 /* Сторніка портфоліо */
@@ -320,6 +344,7 @@ h2 {
   border-bottom-right-radius: 4px;
   background-color: var(--secondary-title-text-color);
   box-shadow: var(--card-shadow);
+  margin-bottom: none;
 }
 
 .site-nav {
@@ -349,6 +374,9 @@ p {
   background-color: var(--secondary-bg-color);
 }
 
+.contacts-list:hover{
+color: var(--accent-hover-color);
+}
 .contacts-list {
   display: flex;
   margin: 0;
