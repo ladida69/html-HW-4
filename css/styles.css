@@ -74,6 +74,13 @@ h2 {
   background-color: var(--primary-white-color);
   border-bottom: 1px solid #e0e0e0;
 }
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .main-button {
   display: inline-block;
   font-weight: 700;
@@ -171,7 +178,6 @@ h2 {
   letter-spacing: 3%;
   background-color: var(--secondary-bg-color);
   list-style: none;
-  padding-top: 94px;
 }
 
 .socials {
@@ -182,8 +188,8 @@ h2 {
 }
 .svg-icon {
   display: flex;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   fill: var(--icon-color-fill);
 }
 .svg-icon:hover {
@@ -202,6 +208,28 @@ h2 {
   height: 20px;
   gap: 22px;
 }
+
+/* Icons for client */
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.permanent-icon {
+  background-position: center;
+  border: none;
+  width: 106px;
+  height: 60px;
+}
+
+.permanent-icon:hover {
+  color: var(--accent-hover-color);
+  cursor: pointer;
+}
 .intro {
   font-weight: 700;
   font-size: 36px;
@@ -216,9 +244,7 @@ h2 {
 .team-list {
   display: flex;
   gap: 30px;
-  justify-content: center;
   margin-top: 50px;
-  padding-bottom: 94px;
   background-color: var(--secondary-bg-color);
 }
 .team-man {
@@ -232,12 +258,26 @@ h2 {
   line-height: 100%;
   letter-spacing: 3%;
   text-align: center;
-  margin-top: 94px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
 }
 
+.clients-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.client-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 16px;
+  padding-left: 16px;
+    outline: 1px solid rgb(15, 195, 204);
+
+}
+.client-button{
+  outline: 1px solid red;
+ }
 /* Сторніка портфоліо */
 .site-nav {
   display: flex;
@@ -320,21 +360,17 @@ h2 {
 }
 
 .section {
-  width: 100%;
-  max-width: 1230px;
-  padding: 0 15px 0 15px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+.job{
+  padding-top: 0;
+}
 .photo-list {
   display: flex;
   gap: 30px;
   justify-content: center;
   margin-top: 50px;
-  padding-bottom: 94px;
 }
 
 .self-introduction {
@@ -360,16 +396,6 @@ h2 {
   align-items: center;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 1230px;
-  padding: 0 15px 0 15px;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: space-between;
-}
 
 p {
   font-weight: 400;
