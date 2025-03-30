@@ -14,7 +14,6 @@
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-
 html {
   box-sizing: border-box;
 }
@@ -268,16 +267,31 @@ h2 {
   margin-top: 50px;
 }
 .client-item {
+  display: flex;
+  width: 170px;
+  height: 92px;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-right: 16px;
   padding-left: 16px;
-    outline: 1px solid rgb(15, 195, 204);
-
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
 }
-.client-button{
-  outline: 1px solid red;
- }
+
+.client-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  fill: #afb1b8;
+  border: none;
+}
+
+.client-button:hover {
+  fill: var(--accent-hover-color);
+}
 /* Сторніка портфоліо */
 .site-nav {
   display: flex;
@@ -363,7 +377,7 @@ h2 {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.job{
+.job {
   padding-top: 0;
 }
 .photo-list {
@@ -395,7 +409,6 @@ h2 {
   gap: 93px;
   align-items: center;
 }
-
 
 p {
   font-weight: 400;
