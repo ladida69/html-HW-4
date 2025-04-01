@@ -131,7 +131,6 @@ h2 {
   }
 }
 
-
 .hero {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../images/background-photo.jpg');
@@ -549,4 +548,27 @@ footer {
   padding: 0 15px 0 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.join-us-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  & .joinus-icon {
+    background-color: transparent;
+    border: none;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}
+
+.join-us-container {
+  margin: 0;
+  padding: 0;
+  width: 206px;
+  height: 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content:left;
 }
