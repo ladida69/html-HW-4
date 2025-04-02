@@ -439,7 +439,10 @@ p {
 }
 .contacts-list {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin: 0;
+  padding: 0;
   gap: 50px;
   &:hover {
     color: var(--accent-color);
@@ -521,6 +524,8 @@ footer .contacts-list {
   line-height: 1.71;
   letter-spacing: 3%;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 .logo-footer {
   display: inline-block;
@@ -572,7 +577,17 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  align-items: center;
+  align-items: flex-start;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
 }
+.contact-svg {
+  color: transparent;
+  background-color: none;
+  border: none;
+  display: flex;
+flex-direction: column-reverse;
+  fill: var(--primary-text-color);
+}
+
