@@ -190,8 +190,8 @@ h2 {
   display: flex;
   width: 25px;
   height: 25px;
-  fill: inherit;
 }
+
 
 .social-link:hover {
   color: var(--accent-hover-color);
@@ -199,11 +199,11 @@ h2 {
 .social-link {
   display: block;
   border: none;
-  background-color: transparent;
+  fill: #afb1b8;
+  background-color: #2196F3;
+  border-radius: 50%;
   cursor: pointer;
-  width: 20px;
   height: 20px;
-  gap: 22px;
 }
 
 /* Icons for client */
@@ -514,8 +514,9 @@ footer {
 }
 
 .find-us-link {
+  font-size: 14px;
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: rgba(255, 255, 255, 0.6);
   &:hover,
   &:focus {
     color: var(--accent-hover-color);
@@ -577,6 +578,8 @@ footer {
 .contact {
   display: inline-flex;
   padding-top: 32px;
+  font-size: 14px;
+  font-weight: 500;
   padding-bottom: 32px;
   fill: var(--primary-text-color);
   align-items: center;
